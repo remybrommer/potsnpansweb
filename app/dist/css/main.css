@@ -176,8 +176,9 @@ header {
 
 .work {
   padding: 6vw 6vw 10vw 6vw;
-  background: #111;
-  color: #fff; }
+  background: url("https://images.unsplash.com/photo-1422255198496-21531f12a6e8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=39fbd082862a11e6b6a3dac814db178b") no-repeat center center;
+  background-size: cover;
+  color: #111; }
   .work-title {
     font-size: 1.4em; }
   .work-content {
@@ -200,7 +201,7 @@ header {
       width: 40%;
       padding-top: 5vw; }
       .work-content-arrow-circle {
-        border: 2px solid #fff;
+        border: 2px solid #111;
         border-radius: 50%;
         padding: 0 1.5vw 0 1.5vw; }
       .work-content-arrow-circle:hover {
@@ -218,7 +219,7 @@ header {
       text-align: left;
       font-size: 7vw; }
       .work-content-arrow-circle {
-        border: 2px solid #fff;
+        border: 2px solid #111;
         border-radius: 50%;
         padding: 0 3vw 0 3vw; }
     .work-content-subtitle {
