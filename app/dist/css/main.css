@@ -106,19 +106,19 @@ header {
     display: block; } }
 
 .intro {
-  padding: 6.5vw 13vw 13vw 13vw;
+  padding: 7vw 12vw 13vw 12vw;
   background: #fff; }
   .intro-title {
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 1.9em;
     font-weight: 700;
-    padding-bottom: 3vw; }
+    padding-bottom: 4vw; }
   .intro-subtitle {
     font-family: "Playfair Display", serif;
     font-size: 8vw;
     font-weight: 900;
     letter-spacing: .05em;
-    line-height: 9vw; }
+    line-height: 8vw; }
 
 .about {
   padding: 6vw 6vw 10vw 6vw;
@@ -148,13 +148,12 @@ header {
       .about-content-arrow-circle {
         border: 2px solid #fff;
         border-radius: 50%;
-        padding: 0 1.5vw 0 1.5vw; }
+        padding: 0 1.5vw 0 1.5vw;
+        transition: all 175ms ease-in-out; }
       .about-content-arrow-circle:hover {
         background: #fff;
         color: #111;
         cursor: pointer; }
-      .about-content-arrow .ion-android-arrow-dropright-circle {
-        color: #fff; }
 
 @media (max-width: 46.875em) {
   .about-content {
@@ -176,9 +175,9 @@ header {
 
 .work {
   padding: 6vw 6vw 10vw 6vw;
-  background: url("https://images.unsplash.com/photo-1422255198496-21531f12a6e8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=39fbd082862a11e6b6a3dac814db178b") no-repeat center center;
+  background: url("https://images.unsplash.com/photo-1464347477106-7648bc26261b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=65cc1e3d27f90a9111b40f47d797e352") no-repeat center center;
   background-size: cover;
-  color: #111; }
+  color: #fff; }
   .work-title {
     font-size: 1.4em; }
   .work-content {
@@ -201,15 +200,14 @@ header {
       width: 40%;
       padding-top: 5vw; }
       .work-content-arrow-circle {
-        border: 2px solid #111;
+        border: 2px solid #fff;
         border-radius: 50%;
-        padding: 0 1.5vw 0 1.5vw; }
+        padding: 0 1.5vw 0 1.5vw;
+        transition: all 175ms ease-in-out; }
       .work-content-arrow-circle:hover {
         background: #fff;
-        color: #111;
+        color: #c8dade;
         cursor: pointer; }
-      .work-content-arrow .ion-android-arrow-dropright-circle {
-        color: #fff; }
 
 @media (max-width: 46.875em) {
   .work-content {

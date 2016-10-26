@@ -1,8 +1,8 @@
 .work
   padding: 6vw 6vw 10vw 6vw
-  background: url("https://images.unsplash.com/photo-1422255198496-21531f12a6e8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=39fbd082862a11e6b6a3dac814db178b") no-repeat center center
+  background: url("https://images.unsplash.com/photo-1464347477106-7648bc26261b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=65cc1e3d27f90a9111b40f47d797e352") no-repeat center center
   background-size: cover
-  color: $cod-gray
+  color: $white
 
   &-title
     font-size: 1.4em
@@ -31,17 +31,16 @@
       padding-top: 5vw
 
       &-circle
-        border: 2px solid $cod-gray
+        border: 2px solid $white
         border-radius: 50%
         padding: 0 1.5vw 0 1.5vw
+        transition: all 175ms ease-in-out
 
       &-circle:hover
         background: $white
-        color: $cod-gray
+        color: $zumthor
         cursor: pointer
 
-      .ion-android-arrow-dropright-circle
-        color: $white
 
 @media (max-width: $medium-devices)
   .work-content
