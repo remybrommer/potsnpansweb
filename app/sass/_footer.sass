@@ -10,42 +10,21 @@
   padding: 4vw 7vw 7vw 7vw
   background: $cod-gray
 
-  &-triangle
+  &-section
     width: 25%
+
+    &-title
+      color: darken($whisper, 30%)
 
     img
       padding-top: 1.5em
       width: 4em
       opacity: .68
 
-  &-webContact
-    width: 25%
-
-    &-title
-      color: darken($whisper, 30%)
-
-  &-filmContact
-    width: 25%
-
-    &-title
-      @extend .footer-webContact-title
-
-  &-social
-    width: 25%
-
-    &-title
-      @extend .footer-webContact-title
-
 @media (max-width: $medium-devices)
   .footer
     padding-left: 7vw
     flex-flow: column nowrap
 
-    &-webContact
-      width: 75%
-
-    &-filmContact
-      width: 75%
-
-    &-social
+    &-section
       width: 75%

@@ -1,7 +1,16 @@
-.about
+.section
   padding: 6vw 6vw 10vw 6vw
-  background: $cod-gray
   color: $whisper
+
+  &.dark
+    background: $cod-gray
+
+  &.background-image
+    background-size: cover
+    color: $white
+
+    &.work
+      background: url("https://images.unsplash.com/photo-1464347477106-7648bc26261b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=65cc1e3d27f90a9111b40f47d797e352") no-repeat center center
 
   &-title
     font-size: 1.4em
@@ -23,34 +32,11 @@
         font-weight: 300
         padding-top: 7vw
 
-    &-arrow
-      font-size: 3vw
-      text-align: center
-      width: 40%
-      padding-top: 5vw
-
-      &-circle
-        border: 2px solid $whisper
-        border-radius: 50%
-        padding: 0 1.2vw 0 1.2vw
-        transition: all 175ms ease-in-out
-
-      &-circle:hover
-        background: $whisper
-        color: $cod-gray
-        cursor: pointer
 
 @media (max-width: $medium-devices)
-  .about-content
+  .section-content
     display: flex
     flex-direction: column
-
-    &-arrow
-      text-align: left
-      font-size: 7vw
-
-      &-circle
-        padding: 0 2.6vw 0 2.6vw
 
     &-subtitle
       font-size: 7vw

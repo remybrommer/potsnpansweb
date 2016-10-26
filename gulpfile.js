@@ -40,8 +40,8 @@ gulp.task('serve', function() {
       baseDir: src + 'app/dist'
     }
   });
-  gulp.watch('app/sass/*.{sass, scss}', {cwd: src}, ['styles']);
-  gulp.watch('app/pug/*.pug', {cwd: src}, ['views']);
+  gulp.watch('app/sass/**/*.{sass, scss}', {cwd: src}, ['styles']);
+  gulp.watch('app/pug/**/*.pug', {cwd: src}, ['views']);
   gulp.watch('app/dist/scripts/*.js', {cwd: src}, ['js-watch']);
   gulp.watch('app/dist/*.html').on('change', browserSync.reload);
 });
