@@ -10,7 +10,7 @@ var gulp = require('gulp'),
   src = './';
 
 gulp.task('styles', function(){
-  gulp.src('./app/sass/main.sass')
+  gulp.src('./app/styles/main.sass')
     .pipe(plumber())
     .pipe(sass())
     .pipe(gulp.dest(src + 'app/dist/css'))
@@ -18,7 +18,7 @@ gulp.task('styles', function(){
 });
 
 gulp.task('views', function buildHTML() {
-  return gulp.src(src + 'app/pug/index.pug')
+  return gulp.src(src + 'app/templates/index.pug')
   .pipe(plumber())
   .pipe(pug({
     pretty: true
@@ -40,8 +40,8 @@ gulp.task('serve', function() {
       baseDir: src + 'app/dist'
     }
   });
-  gulp.watch('app/sass/**/*.{sass, scss}', {cwd: src}, ['styles']);
-  gulp.watch('app/pug/**/*.pug', {cwd: src}, ['views']);
+  gulp.watch('app/styles/**/*.{sass, scss}', {cwd: src}, ['styles']);
+  gulp.watch('app/templates/**/*.pug', {cwd: src}, ['views']);
   gulp.watch('app/dist/scripts/*.js', {cwd: src}, ['js-watch']);
   gulp.watch('app/dist/*.html').on('change', browserSync.reload);
 });
