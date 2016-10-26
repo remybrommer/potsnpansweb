@@ -40,20 +40,13 @@ body
   <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
+  include ./mixins/footer
+  include ./mixins/subfooter
+
   block content
+
+  +footer
+  +subfooter
 
   script(src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
   script(src="scripts/main.js")
-
-script.
-  $(document).ready(function() {
-    $(window).scroll( function(){
-      $('.fade-in').each( function(i){
-        var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-        var bottom_of_window = $(window).scrollTop() + $(window).height();
-        if( bottom_of_window > bottom_of_object ){
-          $(this).animate({'opacity':'1'},500);
-        }
-      });
-    });
-  });

@@ -71,36 +71,23 @@
       <div class="arrow"><span class="arrow-circle circle-light">&gt;</span></div>
     </div>
   </div>
-  <div class="footer">
-    <div class="footer-section"><img src="img/potsnpanstriangle.png"/></div>
-    <div class="footer-section">
-      <div class="footer-section-title">Let's Talk</div>Remy Brommer<br/>614-981-2686
+    <div class="footer">
+      <div class="footer-section"><img src="img/potsnpanstriangle.png"></div>
+      <div class="footer-section">
+        <div class="footer-section-title">Let's Talk</div>Remy Brommer<br>614-981-2686
+      </div>
+      <div class="footer-section">
+        <div class="footer-section-title">Film Division</div>Daniel Zabludovsky<br>614-406-5710
+      </div>
+      <div class="footer-section">
+        <div class="footer-section-title">Socially Acceptable</div>Instagram<br>Twitter<br>Facebook
+      </div>
     </div>
-    <div class="footer-section">
-      <div class="footer-section-title">Film Division</div>Daniel Zabludovsky<br/>614-406-5710
+    <div class="subfooter">
+      <div class="subfooter-aboutLink">About</div>
+      <div class="subfooter-workLink">Work</div>
+      <div class="subfooter-contactLink">Contact</div>
     </div>
-    <div class="footer-section">
-      <div class="footer-section-title">Socially Acceptable</div>Instagram<br/>Twitter<br/>Facebook
-    </div>
-  </div>
-  <div class="subfooter">
-    <div class="subfooter-aboutLink">About</div>
-    <div class="subfooter-workLink">Work</div>
-    <div class="subfooter-contactLink">Contact</div>
-  </div>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="scripts/main.js"></script>
 </body>
-<script>
-  $(document).ready(function() {
-    $(window).scroll( function(){
-      $('.fade-in').each( function(i){
-        var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-        var bottom_of_window = $(window).scrollTop() + $(window).height();
-        if( bottom_of_window > bottom_of_object ){
-          $(this).animate({'opacity':'1'},500);
-        }
-      });
-    });
-  });
-</script>
