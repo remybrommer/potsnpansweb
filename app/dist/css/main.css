@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700");
 body, html, div,
 blockquote, img, label, p,
 h1, h2, h3, h4, h5, h6,
 pre, ul, ol, li, dl, dt, dd,
 form, a, fieldset, input, th, td {
+  font-family: inherit;
   margin: 0;
   padding: 0;
   border: 0;
@@ -106,16 +108,16 @@ header {
     display: block; } }
 
 .intro {
-  padding: 7vw 12vw 13vw 12vw;
+  padding: 7vw 7vw 13vw 7vw;
   background: #fff; }
   .intro-title {
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: "Karla", sans-serif;
     font-size: 1.9em;
-    font-weight: 700;
-    padding-bottom: 4vw; }
+    font-weight: 400;
+    padding-bottom: 8vw; }
   .intro-subtitle {
     font-family: "Playfair Display", serif;
-    font-size: 8vw;
+    font-size: 7vw;
     font-weight: 900;
     letter-spacing: .05em;
     line-height: 8vw; }
@@ -123,7 +125,7 @@ header {
 .about {
   padding: 6vw 6vw 10vw 6vw;
   background: #111;
-  color: #fff; }
+  color: #e4e4e4; }
   .about-title {
     font-size: 1.4em; }
   .about-content {
@@ -136,7 +138,7 @@ header {
       line-height: 4vw;
       width: 60%; }
       .about-content-subtitle-comment {
-        font-family: "Open Sans Condensed", sans-serif;
+        font-family: "Karla", sans-serif;
         font-size: 1.4vw;
         font-weight: 300;
         padding-top: 7vw; }
@@ -146,12 +148,12 @@ header {
       width: 40%;
       padding-top: 5vw; }
       .about-content-arrow-circle {
-        border: 2px solid #fff;
+        border: 2px solid #e4e4e4;
         border-radius: 50%;
-        padding: 0 1.5vw 0 1.5vw;
+        padding: 0 1.2vw 0 1.2vw;
         transition: all 175ms ease-in-out; }
       .about-content-arrow-circle:hover {
-        background: #fff;
+        background: #e4e4e4;
         color: #111;
         cursor: pointer; }
 
@@ -163,9 +165,7 @@ header {
       text-align: left;
       font-size: 7vw; }
       .about-content-arrow-circle {
-        border: 2px solid #fff;
-        border-radius: 50%;
-        padding: 0 3vw 0 3vw; }
+        padding: 0 2.6vw 0 2.6vw; }
     .about-content-subtitle {
       font-size: 7vw;
       line-height: 8vw;
@@ -190,7 +190,7 @@ header {
       line-height: 4vw;
       width: 60%; }
       .work-content-subtitle-comment {
-        font-family: "Open Sans Condensed", sans-serif;
+        font-family: "Karla", sans-serif;
         font-size: 1.4vw;
         font-weight: 300;
         padding-top: 7vw; }
@@ -202,7 +202,7 @@ header {
       .work-content-arrow-circle {
         border: 2px solid #fff;
         border-radius: 50%;
-        padding: 0 1.5vw 0 1.5vw;
+        padding: 0 1.2vw 0 1.2vw;
         transition: all 175ms ease-in-out; }
       .work-content-arrow-circle:hover {
         background: #fff;
@@ -217,9 +217,7 @@ header {
       text-align: left;
       font-size: 7vw; }
       .work-content-arrow-circle {
-        border: 2px solid #111;
-        border-radius: 50%;
-        padding: 0 3vw 0 3vw; }
+        padding: 0 2.6vw 0 2.6vw; }
     .work-content-subtitle {
       font-size: 7vw;
       line-height: 8vw;
@@ -227,8 +225,46 @@ header {
       .work-content-subtitle-comment {
         font-size: 3vw; } }
 
+.footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  font-family: "Karla", sans-serif;
+  color: #e4e4e4;
+  font-size: 1em;
+  letter-spacing: .03em;
+  line-height: 1.8em;
+  padding-bottom: 3vw;
+  padding-left: 7vw;
+  padding-right: 7vw; }
+  .footer-triangle {
+    width: 25%; }
+    .footer-triangle img {
+      padding-top: 1.5em;
+      width: 4em;
+      opacity: .68; }
+  .footer-webContact {
+    width: 25%; }
+    .footer-webContact-title, .footer-filmContact-title, .footer-social-title {
+      color: #989898; }
+  .footer-filmContact {
+    width: 25%; }
+  .footer-social {
+    width: 25%; }
+
+@media (max-width: 46.875em) {
+  .footer {
+    padding-left: 7vw;
+    flex-flow: column nowrap; }
+    .footer-webContact {
+      width: 75%; }
+    .footer-filmContact {
+      width: 75%; }
+    .footer-social {
+      width: 75%; } }
+
 html {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Karla", sans-serif;
   background: #111; }
 
 h1 {
