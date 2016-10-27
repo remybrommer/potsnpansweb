@@ -1,3 +1,4 @@
-mixin arrow(className, href)
+mixin arrow(href, className, target)
   .arrow
-    span.arrow-circle(class=className) &gt;
+    a(href=href, target=target)
+      span.arrow-circle(class=className) &gt;
