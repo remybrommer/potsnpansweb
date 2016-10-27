@@ -8,19 +8,19 @@
 
 $(document).ready(function () {
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 250) {
-      $('.into-subtitle-rotatingPhrase').html('magic carpet.');
+    if ($(this).scrollTop() > 300) {
+      $('.intro-subtitle-rotatingPhrase').html('magic carpet.');
     } else {
-      $('.into-subtitle-rotatingPhrase').html('yellow brick road.');
+      $('.intro-subtitle-rotatingPhrase').html('escape pod.');
     }
-    if ($(this).scrollTop() > 350) {
-      $('.into-subtitle-rotatingPhrase').html('portal gun.');
+    if ($(this).scrollTop() > 400) {
+      $('.intro-subtitle-rotatingPhrase').html('portal gun.');
     }
-    if ($(this).scrollTop() > 450) {
-      $('.into-subtitle-rotatingPhrase').html('helper monkey.');
+    if ($(this).scrollTop() > 500) {
+      $('.intro-subtitle-rotatingPhrase').html('helper monkey.');
     }
-    if ($(this).scrollTop() > 550) {
-      $('.into-subtitle-rotatingPhrase').html('escape tunnel.');
+    if ($(this).scrollTop() > 600) {
+      $('.intro-subtitle-rotatingPhrase').html('jetpack.');
     }
   });
 });

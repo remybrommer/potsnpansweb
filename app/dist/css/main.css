@@ -149,13 +149,14 @@ a {
   .section.background-image {
     color: #fff; }
     .section.background-image.work {
-      background: url("../img/work-section-background.jpeg") no-repeat center center;
+      background: url("../img/spaceback.jpeg") no-repeat center center;
       background-size: cover; }
   .section-title {
     font-size: 1.4em; }
   .section-content {
     display: flex;
-    justify-content: stretch; }
+    justify-content: stretch;
+    padding-top: 5vw; }
     .section-content-left {
       font-family: "Playfair Display", serif;
       font-size: 3.6vw;

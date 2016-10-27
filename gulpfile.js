@@ -8,14 +8,30 @@ var gulp = require('gulp'),
   cssnano = require('gulp-cssnano'),
   imagemin = require('gulp-imagemin'),
   sassLint = require('gulp-sass-lint'),
+  pugLinter = require('gulp-pug-linter'),
+  jshint = require('gulp-jshint'),
   src = './';
 
-gulp.task('linting', function () {
+gulp.task('sass-lint', function () {
   return gulp.src('app/styles/**/*.sass')
     .pipe(sassLint())
     .pipe(sassLint.format())
     .pipe(sassLint.failOnError());
 });
+
+gulp.task('pug-lint', function () {
+  return gulp
+    .src('./app/templates/**/*.pug')
+    .pipe(pugLinter())
+    .pipe(pugLinter.reporter());
+});
+
+gulp.task('js-lint', function() {
+  return gulp.src('./dist/scripts/**/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
+});
+
 
 gulp.task('styles', function(){
   gulp.src('./app/styles/main.sass')
@@ -74,6 +90,6 @@ gulp.task('css-min', function(){
     .pipe(gulp.dest(src + 'app/dist/css'));
 });
 
-gulp.task('default', ['styles', 'linting', 'views', 'js-watch', 'serve']);
+gulp.task('default', ['styles', 'sass-lint', 'views', 'pug-lint', 'js-watch', 'js-lint', 'serve']);
 
 gulp.task('build', ['image-min', 'js-min', 'css-min']);
