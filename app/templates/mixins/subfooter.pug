@@ -1,5 +1,8 @@
 mixin subfooter
   .subfooter
-    .subfooter-aboutLink About
-    .subfooter-workLink Work
-    .subfooter-contactLink Contact
+    .subfooter-link
+      +link('./about.html', 'link', '_top', 'About')
+    .subfooter-link
+      +link('./work.html', 'link', '_top', 'Work')
+    .subfooter-link
+      +link('./contact.html', 'link', '_top', 'Contact')

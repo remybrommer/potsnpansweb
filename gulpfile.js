@@ -18,7 +18,7 @@ gulp.task('styles', function(){
 });
 
 gulp.task('views', function buildHTML() {
-  return gulp.src(src + 'app/templates/index.pug')
+  return gulp.src(src + 'app/templates/**.pug')
   .pipe(plumber())
   .pipe(pug({
     pretty: true
@@ -26,7 +26,6 @@ gulp.task('views', function buildHTML() {
   .pipe(gulp.dest(src + 'app/dist'))
   .pipe(browserSync.reload({stream: true}));
 });
-
 
 gulp.task('js-watch', function(){
   gulp.src(src + 'app/dist/scripts/*.js')
