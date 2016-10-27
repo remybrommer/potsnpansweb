@@ -1,17 +1,17 @@
-@import "_variables"
-@import "_reset"
-@import "_helpers"
-@import "_page-fade-in"
-@import "_intro"
-@import "mixins/_footer"
-@import "mixins/_subfooter"
-@import "_section"
-@import "mixins/_arrow"
+@import 'variables'
+@import 'reset'
+@import 'helpers'
+@import 'page-fade-in'
+@import 'intro'
+@import 'mixins/footer'
+@import 'mixins/subfooter'
+@import 'section'
+@import 'mixins/circle-button'
 
 
 html
-  font-family: $karla
   background: $black
+  font-family: $karla
 
 h1
   font-size: 4em
@@ -21,3 +21,6 @@ div
 
 .fade-in
   opacity: 0
+
+::selection
+  background: $highlighter-yellow

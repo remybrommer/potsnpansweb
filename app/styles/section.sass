@@ -1,0 +1,57 @@
+.section
+  color: $whisper
+  padding: 6vw 6vw 10vw
+
+  &.dark
+    background: $cod-gray
+
+  &.background-image
+    color: $white
+
+    &.work
+      background: url('../img/work-section-background.jpeg') no-repeat center center
+      background-size: cover
+
+  &-title
+    font-size: 1.4em
+
+  &-content
+    display: flex
+    justify-content: stretch
+
+    &-left
+      font-family: $playfair-display
+      font-size: 3.6vw
+      font-weight: 700
+      line-height: 4vw
+      width: 60%
+
+      &-comment
+        font-family: $karla
+        font-size: 1.4vw
+        font-weight: 300
+        padding-top: 7vw
+
+    &-right
+      font-size: 3vw
+      padding-top: 5vw
+      text-align: center
+      width: 40%
+
+
+@media (max-width: $medium-devices)
+  .section-content
+    display: flex
+    flex-direction: column
+
+    &-left
+      font-size: 7vw
+      line-height: 8vw
+      width: 100%
+
+      &-comment
+        font-size: 3vw
+
+    &-right
+      font-size: 7vw
+      text-align: left

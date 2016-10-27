@@ -1,0 +1,30 @@
+.footer
+  background: $cod-gray
+  color: $whisper
+  display: flex
+  flex-flow: row nowrap
+  font-family: $karla
+  font-size: 1em
+  justify-content: flex-start
+  letter-spacing: .03em
+  line-height: 1.8em
+  padding: 4vw 7vw 7vw
+
+  &-section
+    width: 25%
+
+    &-title
+      color: darken($whisper, 30%)
+
+    img
+      opacity: .68
+      padding-top: 1.5em
+      width: 4em
+
+@media (max-width: $medium-devices)
+  .footer
+    flex-flow: column nowrap
+    padding-left: 7vw
+
+    &-section
+      width: 75%

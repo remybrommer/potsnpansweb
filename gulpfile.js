@@ -7,7 +7,15 @@ var gulp = require('gulp'),
   uglify = require('gulp-uglify'),
   cssnano = require('gulp-cssnano'),
   imagemin = require('gulp-imagemin'),
+  sassLint = require('gulp-sass-lint'),
   src = './';
+
+gulp.task('linting', function () {
+  return gulp.src('app/styles/**/*.sass')
+    .pipe(sassLint())
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError());
+});
 
 gulp.task('styles', function(){
   gulp.src('./app/styles/main.sass')
@@ -36,7 +44,10 @@ gulp.task('js-watch', function(){
 gulp.task('serve', function() {
   browserSync.init({
     server: {
-      baseDir: src + 'app/dist'
+      baseDir: src + 'app/dist',
+      serveStaticOptions: {
+        extensions: ['html']
+      }
     }
   });
   gulp.watch('app/styles/**/*.{sass, scss}', {cwd: src}, ['styles']);
@@ -63,6 +74,6 @@ gulp.task('css-min', function(){
     .pipe(gulp.dest(src + 'app/dist/css'));
 });
 
-gulp.task('default', ['styles', 'views', 'js-watch', 'serve']);
+gulp.task('default', ['styles', 'linting', 'views', 'js-watch', 'serve']);
 
 gulp.task('build', ['image-min', 'js-min', 'css-min']);

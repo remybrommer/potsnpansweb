@@ -29,6 +29,7 @@ doctype html
     //- Remove telephones formatfor IOS Devices
     meta(name="format-detection", content="telephone=no")
 
+    link(href="https://fonts.googleapis.com/css?family=Karla:400,700|Playfair+Display:400,700,900" rel="stylesheet")
     link(rel="stylesheet", href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
     link(rel="stylesheet", href="css/main.css")
     link(rel="author", href="humans.txt")
@@ -40,8 +41,9 @@ body
   <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  include ../mixins/link
+  include ../mixins/circle-button
   include ../mixins/footer
+  include ../mixins/link
   include ../mixins/subfooter
 
   block content

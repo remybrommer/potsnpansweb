@@ -1,0 +1,24 @@
+.circle-button
+  border-radius: 50%
+  padding: 0 1.2vw
+  transition: 175ms ease-in-out
+
+  &.circle-light
+    border: 2px solid $white
+
+    &:hover
+      background: $white
+      color: $zumthor
+      cursor: pointer
+
+  &.circle-dark
+    border: 2px solid $whisper
+
+    &:hover
+      background: $whisper
+      color: $cod-gray
+      cursor: pointer
+
+@media (max-width: $medium-devices)
+  .circle-button
+    padding: 0 2.6vw

@@ -1,24 +1,47 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
-@import url("https://fonts.googleapis.com/css?family=Karla:400,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700");
-body, html, div,
-blockquote, img, label, p,
-h1, h2, h3, h4, h5, h6,
-pre, ul, ol, li, dl, dt, dd,
-form, a, fieldset, input, th, td {
+body,
+html,
+div,
+blockquote,
+img,
+label,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+a,
+fieldset,
+input,
+th,
+td {
+  border: 0;
   font-family: inherit;
   margin: 0;
-  padding: 0;
-  border: 0;
-  outline: none; }
+  outline: none;
+  padding: 0; }
 
 body {
   line-height: 1; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 100%;
-  padding: .6em 0;
-  margin: 0 15px; }
+  margin: 0 15px;
+  padding: .6em 0; }
 
 a {
   color: #e4e4e4;
@@ -40,9 +63,6 @@ a {
   display: none; }
 
 .cover-img {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover; }
 
 @keyframes pageFadeIn {
@@ -52,20 +72,18 @@ a {
     opacity: 1; } }
 
 .page-fade-in {
-  opacity: 0;
   animation: pageFadeIn ease-in 1;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-duration: 1s; }
-
-.page-fade-in.one {
-  animation-delay: 0.7s; }
-
-.page-fade-in.two {
-  animation-delay: 1.2s; }
+  opacity: 0; }
+  .page-fade-in.one {
+    animation-delay: .7s; }
+  .page-fade-in.two {
+    animation-delay: 1.2s; }
 
 .intro {
-  padding: 7vw 7vw 13vw 7vw;
-  background: #fff; }
+  background: #fff;
+  padding: 7vw 7vw 13vw; }
   .intro-title {
     font-family: "Karla", sans-serif;
     font-size: 1.9em;
@@ -77,116 +95,122 @@ a {
     font-weight: 900;
     letter-spacing: .05em;
     line-height: 8vw; }
+  .intro-corner-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 35%;
+    z-index: 1; }
 
 .footer {
+  background: #111;
+  color: #e4e4e4;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
   font-family: "Karla", sans-serif;
-  color: #e4e4e4;
   font-size: 1em;
+  justify-content: flex-start;
   letter-spacing: .03em;
   line-height: 1.8em;
-  padding: 4vw 7vw 7vw 7vw;
-  background: #111; }
+  padding: 4vw 7vw 7vw; }
   .footer-section {
     width: 25%; }
     .footer-section-title {
       color: #989898; }
     .footer-section img {
+      opacity: .68;
       padding-top: 1.5em;
-      width: 4em;
-      opacity: .68; }
+      width: 4em; }
 
 @media (max-width: 46.875em) {
   .footer {
-    padding-left: 7vw;
-    flex-flow: column nowrap; }
+    flex-flow: column nowrap;
+    padding-left: 7vw; }
     .footer-section {
       width: 75%; } }
 
 .subfooter {
+  align-items: center;
   background: #000;
   color: #e4e4e4;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   padding-bottom: 3vw; }
   .subfooter-link {
     border-bottom: 0.1em solid #e4e4e4;
-    margin: 0 2vw 0 2vw; }
+    margin: 0 2vw; }
 
 .section {
-  padding: 6vw 6vw 10vw 6vw;
-  color: #e4e4e4; }
+  color: #e4e4e4;
+  padding: 6vw 6vw 10vw; }
   .section.dark {
     background: #111; }
   .section.background-image {
     color: #fff; }
     .section.background-image.work {
-      background: url("https://images.unsplash.com/photo-1464347477106-7648bc26261b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=65cc1e3d27f90a9111b40f47d797e352") no-repeat center center;
+      background: url("../img/work-section-background.jpeg") no-repeat center center;
       background-size: cover; }
   .section-title {
     font-size: 1.4em; }
   .section-content {
     display: flex;
     justify-content: stretch; }
-    .section-content-subtitle {
+    .section-content-left {
       font-family: "Playfair Display", serif;
       font-size: 3.6vw;
       font-weight: 700;
       line-height: 4vw;
       width: 60%; }
-      .section-content-subtitle-comment {
+      .section-content-left-comment {
         font-family: "Karla", sans-serif;
         font-size: 1.4vw;
         font-weight: 300;
         padding-top: 7vw; }
+    .section-content-right {
+      font-size: 3vw;
+      padding-top: 5vw;
+      text-align: center;
+      width: 40%; }
 
 @media (max-width: 46.875em) {
   .section-content {
     display: flex;
     flex-direction: column; }
-    .section-content-subtitle {
+    .section-content-left {
       font-size: 7vw;
       line-height: 8vw;
       width: 100%; }
-      .section-content-subtitle-comment {
-        font-size: 3vw; } }
+      .section-content-left-comment {
+        font-size: 3vw; }
+    .section-content-right {
+      font-size: 7vw;
+      text-align: left; } }
 
-.arrow {
-  font-size: 3vw;
-  text-align: center;
-  width: 40%;
-  padding-top: 5vw; }
-  .arrow-circle {
-    border-radius: 50%;
-    padding: 0 1.2vw 0 1.2vw;
-    transition: all 175ms ease-in-out; }
-    .arrow-circle.circle-light {
-      border: 2px solid #fff; }
-      .arrow-circle.circle-light:hover {
-        color: #c8dade;
-        cursor: pointer;
-        background: #fff; }
-    .arrow-circle.circle-dark {
-      border: 2px solid #e4e4e4; }
-      .arrow-circle.circle-dark:hover {
-        color: #111;
-        cursor: pointer;
-        background: #e4e4e4; }
+.circle-button {
+  border-radius: 50%;
+  padding: 0 1.2vw;
+  transition: 175ms ease-in-out; }
+  .circle-button.circle-light {
+    border: 2px solid #fff; }
+    .circle-button.circle-light:hover {
+      background: #fff;
+      color: #c8dade;
+      cursor: pointer; }
+  .circle-button.circle-dark {
+    border: 2px solid #e4e4e4; }
+    .circle-button.circle-dark:hover {
+      background: #e4e4e4;
+      color: #111;
+      cursor: pointer; }
 
 @media (max-width: 46.875em) {
-  .arrow {
-    text-align: left;
-    font-size: 7vw; }
-    .arrow-circle {
-      padding: 0 2.6vw 0 2.6vw; } }
+  .circle-button {
+    padding: 0 2.6vw; } }
 
 html {
-  font-family: "Karla", sans-serif;
-  background: #000; }
+  background: #000;
+  font-family: "Karla", sans-serif; }
 
 h1 {
   font-size: 4em; }
@@ -196,3 +220,6 @@ div {
 
 .fade-in {
   opacity: 0; }
+
+::selection {
+  background: #f3f315; }
