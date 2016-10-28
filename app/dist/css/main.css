@@ -157,6 +157,14 @@ a {
     display: flex;
     justify-content: stretch;
     padding-top: 5vw; }
+    .section-content-center {
+      color: #e4e4e4;
+      font-family: "Playfair Display", serif;
+      font-size: 12vw;
+      font-weight: 700;
+      line-height: 7.5vw;
+      text-align: center;
+      width: 100%; }
     .section-content-left {
       font-family: "Playfair Display", serif;
       font-size: 3.6vw;
