@@ -39,18 +39,20 @@
 
   //
   $(document).ready(function() {
-    $('.client-list-item').hover(
+    $('.client-list-item a').hover(
       function() {
         var backgroundClass = this.innerHTML.replace(/\s+/g, '-').replace(/'/g,"").toLowerCase();
         $('.section').addClass(backgroundClass);
-        $(this.parentElement.children).addClass('dimmed');
-        $(this).addClass('highlighted');
+        $('.section').removeClass('background-image', 'work');
+        $(this.parentElement.parentElement.children).addClass('dimmed');
+        $(this.parentElement).addClass('highlighted');
       },
       function() {
         var backgroundClass = this.innerHTML.replace(/\s+/g, '-').replace(/'/g,"").toLowerCase();
         $('.section').removeClass(backgroundClass);
-        $(this.parentElement.children).removeClass('dimmed');
-        $(this).removeClass('highlighted');
+        $('.section').addClass('background-image', 'work');
+        $(this.parentElement.parentElement.children).removeClass('dimmed');
+        $(this.parentElement).removeClass('highlighted');
       }
     );
   });
