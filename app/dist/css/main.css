@@ -47,6 +47,9 @@ a {
   color: #e4e4e4;
   text-decoration: none; }
 
+ul {
+  list-style-type: none; }
+
 .center {
   text-align: center; }
 
@@ -143,9 +146,22 @@ a {
 
 .section {
   color: #e4e4e4;
-  padding: 6vw 6vw 10vw; }
+  padding: 6vw 6vw 10vw;
+  transition: opacity 500ms ease-in-out; }
   .section.dark {
     background: #111; }
+  .section.bliss-in-a-bottle {
+    background: url("../img/blissinabottle-clients-background.jpg") no-repeat center center;
+    background-size: cover; }
+  .section.samson-mens-emporium {
+    background: url("../img/samsonmensemporium-clients-background.jpg") no-repeat center center;
+    background-size: cover; }
+  .section.prolong-tool {
+    background: url("../img/prolongtool-clients-background.jpg") no-repeat center center;
+    background-size: cover; }
+  .section.musca-domestica {
+    background: url("../img/muscadomestica-clients-background.jpeg") no-repeat center center;
+    background-size: cover; }
   .section.background-image {
     color: #fff; }
     .section.background-image.work {
@@ -160,9 +176,8 @@ a {
     .section-content-center {
       color: #e4e4e4;
       font-family: "Playfair Display", serif;
-      font-size: 12vw;
+      font-size: 4vw;
       font-weight: 700;
-      line-height: 7.5vw;
       text-align: center;
       width: 100%; }
     .section-content-left {
@@ -216,6 +231,15 @@ a {
 @media (max-width: 46.875em) {
   .circle-button {
     padding: 0 2.6vw; } }
+
+.client-list-item {
+  margin-bottom: 2vw;
+  transition: 300ms ease-in-out; }
+  .client-list-item.dimmed {
+    opacity: .3; }
+  .client-list-item.highlighted {
+    color: #fff;
+    opacity: 1; }
 
 html {
   background: #000;

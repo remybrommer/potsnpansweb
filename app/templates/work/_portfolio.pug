@@ -1,10 +1,8 @@
+- var clients = ['Bliss in a Bottle', "Samson Men's Emporium", 'Prolong Tool', 'Musca Domestica']
 .section.dark.page-fade-in.one
-  .intro-title.center pots&amp;pans.web
+  .intro-title.center
+    +link('/index', '', '_top', 'pots&pans.web')
   .section-content-center
-    | Bliss in a Bottle
-    br
-    | Samson Men's Emporium
-    br
-    | Prolong Tool
-    br
-    | Musca Domestica
+    ul.client-list
+      each client in clients
+        li.client-list-item #{client}

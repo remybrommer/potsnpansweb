@@ -4,29 +4,27 @@
 
 (function($, window, document) {
 
-// page-load effect
-
-$(document).ready(function () {
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-      $('.intro-subtitle-rotatingPhrase').html('magic carpet.');
-    } else {
-      $('.intro-subtitle-rotatingPhrase').html('escape pod.');
-    }
-    if ($(this).scrollTop() > 400) {
-      $('.intro-subtitle-rotatingPhrase').html('portal gun.');
-    }
-    if ($(this).scrollTop() > 500) {
-      $('.intro-subtitle-rotatingPhrase').html('helper monkey.');
-    }
-    if ($(this).scrollTop() > 600) {
-      $('.intro-subtitle-rotatingPhrase').html('jetpack.');
-    }
+  // page-load effect
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        $('.intro-subtitle-rotatingPhrase').html('magic carpet.');
+      } else {
+        $('.intro-subtitle-rotatingPhrase').html('escape pod.');
+      }
+      if ($(this).scrollTop() > 400) {
+        $('.intro-subtitle-rotatingPhrase').html('portal gun.');
+      }
+      if ($(this).scrollTop() > 500) {
+        $('.intro-subtitle-rotatingPhrase').html('helper monkey.');
+      }
+      if ($(this).scrollTop() > 600) {
+        $('.intro-subtitle-rotatingPhrase').html('jetpack.');
+      }
+    });
   });
-});
 
-// fade-in effect
-
+  // fade-in effect
   $(document).ready(function() {
     $(window).scroll( function(){
       $('.fade-in').each( function(i){
@@ -37,6 +35,24 @@ $(document).ready(function () {
         }
       });
     });
+  });
+
+  //
+  $(document).ready(function() {
+    $('.client-list-item').hover(
+      function() {
+        var backgroundClass = this.innerHTML.replace(/\s+/g, '-').replace(/'/g,"").toLowerCase();
+        $('.section').addClass(backgroundClass);
+        $(this.parentElement.children).addClass('dimmed');
+        $(this).addClass('highlighted');
+      },
+      function() {
+        var backgroundClass = this.innerHTML.replace(/\s+/g, '-').replace(/'/g,"").toLowerCase();
+        $('.section').removeClass(backgroundClass);
+        $(this.parentElement.children).removeClass('dimmed');
+        $(this).removeClass('highlighted');
+      }
+    );
   });
 
 
