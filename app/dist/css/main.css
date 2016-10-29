@@ -167,11 +167,11 @@ ul {
   .section.musca-domestica {
     background: url("../img/muscadomestica-clients-background.jpeg") no-repeat center center;
     background-size: cover; }
-  .section.boobs-that-are-cool {
-    background: url("../img/2mfzssh.jpg") no-repeat center center;
-    background-size: cover; }
+  .section.black {
+    background: #000; }
   .section-title {
-    font-size: 1.4em; }
+    font-size: 1.4em;
+    width: 60%; }
   .section-content {
     display: flex;
     justify-content: stretch;

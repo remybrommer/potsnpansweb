@@ -28,10 +28,10 @@
   $(document).ready(function() {
     $(window).scroll( function(){
       $('.fade-in').each( function(i){
-        var top_of_object = $(this).offset().top;
+        var top_of_object = $(this).offset().top +200;
         var bottom_of_window = $(window).scrollTop() + $(window).height();
         if( bottom_of_window > top_of_object ){
-          $(this).animate({'opacity':'1'},1000);
+          $(this).animate({'opacity':'1'},1500);
         }
       });
     });
