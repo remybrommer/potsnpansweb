@@ -172,9 +172,6 @@ ul {
   .section.bliss-in-a-bottle {
     background: url("../img/blissinabottle-clients-background.jpg") no-repeat center center;
     background-size: cover; }
-    .section.bliss-in-a-bottle-projects {
-      background: url("../img/blissnewback.jpeg") no-repeat center center;
-      background-size: cover; }
   .section.samson-mens-emporium {
     background: url("../img/samsonmensemporium-clients-background.jpg") no-repeat center center;
     background-size: cover; }
@@ -252,6 +249,27 @@ ul {
   .circle-button {
     padding: 0 2.6vw; } }
 
+.hero {
+  background: #fff;
+  padding: 7vw 7vw 13vw; }
+  .hero-image {
+    background: url("../img/blissnewback.jpeg") no-repeat center center;
+    background-size: cover; }
+  .hero-title {
+    color: #fff;
+    font-family: "Karla", sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
+    padding-bottom: 10vw; }
+  .hero-subtitle {
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    font-size: 4vw;
+    font-weight: 900;
+    letter-spacing: .08em;
+    line-height: 8vw;
+    padding-bottom: 13vw; }
+
 .client-list-item {
   margin-bottom: 2vw;
   transition: 300ms ease-in-out; }
@@ -270,14 +288,16 @@ ul {
     font-family: "Karla", sans-serif;
     font-size: 1em;
     line-height: 1.3em;
-    padding: 0vw 10vw; }
+    padding-left: 10vw;
+    padding-right: 10vw; }
   .study-main {
     font-family: "Playfair Display", serif;
     font-size: 3vw;
     font-weight: 700;
     line-height: 3.5vw; }
-  .study img {
-    width: 80%; }
+    .study-main img {
+      padding-top: 17vw;
+      width: 100%; }
 
 html {
   background: #000;
