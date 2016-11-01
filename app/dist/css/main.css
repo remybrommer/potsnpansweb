@@ -276,6 +276,8 @@ ul {
     font-size: 3vw;
     font-weight: 700;
     line-height: 3.5vw; }
+  .study img {
+    width: 80%; }
 
 html {
   background: #000;
