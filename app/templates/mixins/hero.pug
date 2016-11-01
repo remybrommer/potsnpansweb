@@ -1,5 +1,4 @@
 mixin hero(imageUrl, subtitle)
-  .hero-image.page-fade-in.one
+  .hero-image.page-fade-in.one(style='background: url(' + imageUrl + ') no-repeat center center; background-size: cover')
     .hero-title.center pots&amp;pans.web
-    .hero-subtitle.center
-      | Delicious do-over.
+    .hero-subtitle.center= subtitle

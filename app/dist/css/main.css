@@ -252,9 +252,6 @@ ul {
 .hero {
   background: #fff;
   padding: 7vw 7vw 13vw; }
-  .hero-image {
-    background: url("../img/blissnewback.jpeg") no-repeat center center;
-    background-size: cover; }
   .hero-title {
     color: #fff;
     font-family: "Karla", sans-serif;
