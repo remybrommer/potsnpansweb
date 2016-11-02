@@ -2,4 +2,12 @@ extends ./layouts/base.pug
 
 block content
   +hero('../img/blissnewback.jpeg', 'Delicious do-over')
-  include ./bliss-in-a-bottle/_content.pug
+  +study(
+    'bliss-in-a-bottle',
+    "Our goal was to bring this growing business not only into the present, but a few steps <i>into the future</i>.",
+    [
+      'img/bliss-in-a-bottle-example.png',
+      'img/bliss-in-a-bottle-example.png',
+      'img/bliss-in-a-bottle-example.png'
+    ]
+  )
